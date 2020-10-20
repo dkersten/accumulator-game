@@ -4,12 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/styles.css" />
-    <title>Happy Coding!</title>
+    <title>Wealth Accumulator</title>
   </head>
   <body>
-    <h1>Gulp Starter</h1>
-    <p>Another test</p>
-    <img class="colorful-shadow" src="./dist/assets/img/hollywood-sign.jpg" alt="Hollywood Sign in the distance seen from a palm tree lined street">
+    <div class="container">
+      <h1>Wealth Accumulator</h1>
+      <p class="main summary">Grow your wealth! Click the dollar bill to make money.</p>
+      <section class="stats-container">
+        <div class="dollar">
+          <div class="circle">
+            <span class="letters">CC</span>
+          </div>
+          <div class="border border-top"></div>
+          <div class="border border-right"></div>
+          <div class="border border-bottom"></div>
+          <div class="border border-left"></div>
+          <div class="diagonal top-left"></div>
+          <div class="diagonal top-right"></div>
+          <div class="diagonal bottom-right"></div>
+          <div class="diagonal bottom-left"></div>
+          <div class="bottom-box"></div>
+          <span class="dollar dollar-left">$</span>
+          <span class="dollar dollar-right">$</span>
+          <svg class="triangle top-left" height="20" width="20">
+            <polygon points="0 0, 0 15, 15 0" />
+          </svg>
+          <svg class="triangle top-right" height="20" width="20">
+            <polygon points="20 0, 20 15, 5 0" />
+          </svg>
+          <svg class="triangle bottom-right" height="20" width="20">
+            <polygon points="20 5, 20 20, 5 20" />
+          </svg>
+          <svg class="triangle bottom-left" height="20" width="20">
+            <polygon points="0 20, 0 5, 15 20" />
+          </svg>
+        </div>
+        <div class="wealth-count">
+          Your wealth:
+          <span class="wealth-count-num">
+            
+          </span>
+        </div>
+        <div class="wealth-per-second">
+          Per second:
+          <span class="per-second-num">
+            0
+          </span>
+        </div>
+      </section>
+    </div>
     <script src="./dist/all.js"></script>
   </body>
 </html>

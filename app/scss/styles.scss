@@ -7,13 +7,17 @@
 // base imports
 @import './base/reset';
 @import './base/typography';
+@import './base/global';
 
 // components imports
 @import './components/images.scss';
 @import './components/header.scss';
+@import './components/summary.scss';
+@import './components/dollar-bill.scss';
 
 // layout imports
 @import './layout/temp.scss';
+@import './layout/container.scss';
 
 // pages imports
 @import './pages/home.scss';

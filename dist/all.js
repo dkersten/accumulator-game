@@ -1,1 +1,1 @@
-const h1=document.querySelector("h1");h1.addEventListener("click",(()=>{alert("hello")}));const p=document.querySelector("p");p.addEventListener("click",(()=>{alert("boom boom")}));
+let CURRENTSCORE=0;const dollar=document.querySelector("div.dollar");dollar.addEventListener("click",(()=>{console.log("ya'll clicked me"),updateWealthFromDollarClick()}));const currentWealthNum=document.querySelector("span.wealth-count-num"),updateWealthFromDollarClick=()=>{CURRENTSCORE+=1,currentWealthNum.textContent="",currentWealthNum.textContent=CURRENTSCORE};
