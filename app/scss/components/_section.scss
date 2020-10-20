@@ -1,0 +1,13 @@
+section {
+  background: $color-cream;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: $box-shadow-sm-subtle;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $color-green-dark;
+    text-align: center;
+  }
+}
