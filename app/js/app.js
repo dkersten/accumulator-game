@@ -10,7 +10,7 @@ const franchiseCard = document.querySelector('.franchise')
 
 // property costs
 let vendingPrice = 2,
-    foodCartPrice = 10,
-    foodTruckPrice = 20,
-    restaurantPrice = 30,
-    franchisePrice = 50
+    foodCartPrice = 4,
+    foodTruckPrice = 6,
+    restaurantPrice = 8,
+    franchisePrice = 10
