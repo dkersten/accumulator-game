@@ -16,6 +16,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.disabled {
+      background: $color-green-dark-disabled;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
   }
 
   h3 {
