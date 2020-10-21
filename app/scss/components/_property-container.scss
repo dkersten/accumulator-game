@@ -1,0 +1,38 @@
+.property-container {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .properties-container {
+    max-width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .property {
+    background: $color-green-dark;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $color-cream;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+  }
+
+  span.cost {
+    color: $color-cream;
+  }
+
+  span.quantity {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color-green-bright;
+  }
+}
