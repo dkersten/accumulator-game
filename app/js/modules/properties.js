@@ -11,6 +11,13 @@ const foodTruckCostEl = document.querySelector('.food-truck > .left .price')
 const restaurantCostEl = document.querySelector('.restaurant > .left .price')
 const franchiseCostEl = document.querySelector('.franchise > .left .price')
 
+// consts for properties owned DOM elements
+const vendingOwnedEl = document.querySelector('.vending-machine > .right .quantity')
+const foodCartOwnedEl = document.querySelector('.food-cart > .right .quantity')
+const foodTruckOwnedEl = document.querySelector('.food-truck > .right .quantity')
+const restaurantOwnedEl = document.querySelector('.restaurant > .right .quantity')
+const franchiseOwnedEl = document.querySelector('.franchise > .right .quantity')
+
 // function to set prices of properties on DOM
 const setPropertyPrices = () => {
     vendingCostEl.innerHTML = vendingPrice
@@ -20,6 +27,16 @@ const setPropertyPrices = () => {
     franchiseCostEl.innerHTML = franchisePrice
 }
 setPropertyPrices()
+
+// function to set properties owned on DOM
+const setPropertiesOwned = () => {
+    vendingOwnedEl.innerHTML = vendingOwned
+    foodCartOwnedEl.innerHTML = foodCartOwned
+    foodTruckOwnedEl.innerHTML = foodTruckOwned
+    restaurantOwnedEl.innerHTML = restaurantOwned
+    franchiseOwnedEl.innerHTML = franchiseOwned
+}
+setPropertiesOwned()
 
 // on load disable properties to be bought
 vendingCard.disabled = true
@@ -101,44 +118,69 @@ const updateWealthAfterPurchase = (pricePaid) => {
 // function call when a user purchases a vending machine
 vendingCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= vendingPrice) {
-        console.log(CURRENTSCORE, vendingPrice)
         CURRENTSCORE -= vendingPrice
         updateWealthAfterPurchase(CURRENTSCORE)
+
+        vendingPrice = Math.ceil(vendingPrice * 1.66)
+        setPropertyPrices()
+
+        vendingOwned += 1
+        setPropertiesOwned()
     }
 })
 
 // function call when a user purchases a food cart
 foodCartCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= foodCartPrice) {
-        console.log(CURRENTSCORE, foodCartPrice)
         CURRENTSCORE -= foodCartPrice
         updateWealthAfterPurchase(CURRENTSCORE)
+
+        foodCartPrice = Math.ceil(foodCartPrice * 1.66)
+        setPropertyPrices()
+
+        foodCartOwned += 1
+        setPropertiesOwned()
     }
 })
 
 // function call when a user purchases a food truck
 foodTruckCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= foodTruckPrice) {
-        console.log(CURRENTSCORE, foodTruckPrice)
         CURRENTSCORE -= foodTruckPrice
         updateWealthAfterPurchase(CURRENTSCORE)
+
+        foodTruckPrice = Math.ceil(foodTruckPrice * 1.66)
+        setPropertyPrices()
+
+        foodTruckOwned += 1
+        setPropertiesOwned()
     }
 })
 
 // function call when a user purchases a restaurant
 restaurantCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= restaurantPrice) {
-        console.log(CURRENTSCORE, restaurantPrice)
         CURRENTSCORE -= restaurantPrice
         updateWealthAfterPurchase(CURRENTSCORE)
+
+        restaurantPrice = Math.ceil(restaurantPrice * 1.66)
+        setPropertyPrices()
+
+        restaurantOwned += 1
+        setPropertiesOwned()
     }
 })
 
 // function call when a user purchases a franchise
 franchiseCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= franchisePrice) {
-        console.log(CURRENTSCORE, franchisePrice)
         CURRENTSCORE -= franchisePrice
         updateWealthAfterPurchase(CURRENTSCORE)
+
+        franchisePrice = Math.ceil(franchisePrice * 1.66)
+        setPropertyPrices()
+
+        franchiseOwned += 1
+        setPropertiesOwned()
     }
 })

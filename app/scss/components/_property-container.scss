@@ -24,6 +24,10 @@
     &.disabled {
       background: $color-green-dark-disabled;
 
+      .quantity {
+        color: $color-red;
+      }
+
       &:hover {
         cursor: not-allowed;
       }

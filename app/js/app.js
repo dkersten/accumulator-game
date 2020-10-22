@@ -1,4 +1,4 @@
-let CURRENTSCORE = 0;
+let CURRENTSCORE = 10000000;
 let CPSSCore = 0;
 
 // get necessary DOM elements
@@ -9,8 +9,14 @@ const restaurantCard = document.querySelector('.restaurant')
 const franchiseCard = document.querySelector('.franchise')
 
 // property costs
-let vendingPrice = 2,
-    foodCartPrice = 4,
-    foodTruckPrice = 6,
-    restaurantPrice = 8,
-    franchisePrice = 10
+let vendingPrice = 200,
+    foodCartPrice = 50000,
+    foodTruckPrice = 100000,
+    restaurantPrice = 2000000,
+    franchisePrice = 50000000
+
+let vendingOwned = 0,
+    foodCartOwned = 0,
+    foodTruckOwned = 0,
+    restaurantOwned = 0,
+    franchiseOwned = 0
