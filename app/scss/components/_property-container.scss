@@ -24,6 +24,10 @@
     &.disabled {
       background: $color-green-dark-disabled;
 
+      .price {
+        color: $color-red;
+      }
+
       .quantity {
         color: $color-red;
       }

@@ -1,5 +1,5 @@
-let CURRENTSCORE = 10000000;
-let CPSSCore = 0;
+let CURRENTSCORE = 100000000;
+let CPSScore = 0;
 
 // get necessary DOM elements
 const vendingCard = document.querySelector('.vending-machine')

@@ -38,6 +38,11 @@ const setPropertiesOwned = () => {
 }
 setPropertiesOwned()
 
+// function to set dollars per second
+const setPerSecond = () => {
+    perSecondTotalEl.innerHTML = CPSScore
+}
+
 // on load disable properties to be bought
 vendingCard.disabled = true
 foodCartCard.disabled = true
@@ -126,6 +131,9 @@ vendingCard.addEventListener('click', (e) => {
 
         vendingOwned += 1
         setPropertiesOwned()
+
+        CPSScore += 2
+        setPerSecond()
     }
 })
 
@@ -140,6 +148,9 @@ foodCartCard.addEventListener('click', (e) => {
 
         foodCartOwned += 1
         setPropertiesOwned()
+
+        CPSScore += 3
+        setPerSecond()
     }
 })
 
@@ -154,6 +165,9 @@ foodTruckCard.addEventListener('click', (e) => {
 
         foodTruckOwned += 1
         setPropertiesOwned()
+
+        CPSScore += 4
+        setPerSecond()
     }
 })
 
@@ -168,6 +182,9 @@ restaurantCard.addEventListener('click', (e) => {
 
         restaurantOwned += 1
         setPropertiesOwned()
+
+        CPSScore += 5
+        setPerSecond()
     }
 })
 
@@ -182,5 +199,8 @@ franchiseCard.addEventListener('click', (e) => {
 
         franchiseOwned += 1
         setPropertiesOwned()
+
+        CPSScore += 6
+        setPerSecond()
     }
 })
