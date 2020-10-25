@@ -15,8 +15,14 @@ let vendingPrice = 200,
     restaurantPrice = 2000000,
     franchisePrice = 50000000
 
+// properties owned
 let vendingOwned = 0,
     foodCartOwned = 0,
     foodTruckOwned = 0,
     restaurantOwned = 0,
     franchiseOwned = 0
+
+// function to format numbers
+const formatNumbers = (num) => {
+    
+}
