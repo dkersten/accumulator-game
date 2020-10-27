@@ -20,11 +20,11 @@ const franchiseOwnedEl = document.querySelector('.franchise > .right .quantity')
 
 // function to set prices of properties on DOM
 const setPropertyPrices = () => {
-    vendingCostEl.innerHTML = vendingPrice
-    foodCartCostEl.innerHTML = foodCartPrice
-    foodTruckCostEl.innerHTML = foodTruckPrice
-    restaurantCostEl.innerHTML = restaurantPrice
-    franchiseCostEl.innerHTML = franchisePrice
+    vendingCostEl.innerHTML = vendingPrice.toLocaleString()
+    foodCartCostEl.innerHTML = foodCartPrice.toLocaleString()
+    foodTruckCostEl.innerHTML = foodTruckPrice.toLocaleString()
+    restaurantCostEl.innerHTML = restaurantPrice.toLocaleString()
+    franchiseCostEl.innerHTML = franchisePrice.toLocaleString()
 }
 setPropertyPrices()
 
@@ -117,7 +117,7 @@ const purchasingCheck = () => {
 
 // update current score on the DOM after purchase
 const updateWealthAfterPurchase = (pricePaid) => {
-    currentWealthNum.innerHTML = pricePaid
+    currentWealthNum.innerHTML = pricePaid.toLocaleString()
 }
 
 // function call when a user purchases a vending machine

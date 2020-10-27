@@ -5,14 +5,14 @@ const updateWealthFromDollarClick = () => {
     CURRENTSCORE += 1
 
     currentWealthNum.textContent = ""
-    currentWealthNum.textContent = CURRENTSCORE
+    currentWealthNum.textContent = CURRENTSCORE.toLocaleString()
 }
 
 // function to add per second score to total score
 const perSecondToTotal = () => {
     window.setInterval(() => {
         CURRENTSCORE += CPSScore
-        currentWealthNum.textContent = CURRENTSCORE
+        currentWealthNum.textContent = CURRENTSCORE.toLocaleString()
     }, 1000)
 }
 perSecondToTotal()
