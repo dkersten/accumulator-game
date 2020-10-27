@@ -40,7 +40,7 @@ setPropertiesOwned()
 
 // function to set dollars per second
 const setPerSecond = () => {
-    perSecondTotalEl.innerHTML = CPSScore
+    perSecondTotalEl.innerHTML = CPSScore.toLocaleString()
 }
 
 // on load disable properties to be bought
@@ -126,13 +126,13 @@ vendingCard.addEventListener('click', (e) => {
         CURRENTSCORE -= vendingPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        vendingPrice = Math.ceil(vendingPrice * 1.66)
+        vendingPrice = Math.ceil(vendingPrice * 1.15)
         setPropertyPrices()
 
         vendingOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 2
+        CPSScore += 50
         setPerSecond()
     }
 })
@@ -143,13 +143,13 @@ foodCartCard.addEventListener('click', (e) => {
         CURRENTSCORE -= foodCartPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        foodCartPrice = Math.ceil(foodCartPrice * 1.66)
+        foodCartPrice = Math.ceil(foodCartPrice * 1.15)
         setPropertyPrices()
 
         foodCartOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 3
+        CPSScore += 125
         setPerSecond()
     }
 })
@@ -160,13 +160,13 @@ foodTruckCard.addEventListener('click', (e) => {
         CURRENTSCORE -= foodTruckPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        foodTruckPrice = Math.ceil(foodTruckPrice * 1.66)
+        foodTruckPrice = Math.ceil(foodTruckPrice * 1.15)
         setPropertyPrices()
 
         foodTruckOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 4
+        CPSScore += 300
         setPerSecond()
     }
 })
@@ -177,13 +177,13 @@ restaurantCard.addEventListener('click', (e) => {
         CURRENTSCORE -= restaurantPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        restaurantPrice = Math.ceil(restaurantPrice * 1.66)
+        restaurantPrice = Math.ceil(restaurantPrice * 1.15)
         setPropertyPrices()
 
         restaurantOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 5
+        CPSScore += 475
         setPerSecond()
     }
 })
@@ -194,13 +194,13 @@ franchiseCard.addEventListener('click', (e) => {
         CURRENTSCORE -= franchisePrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        franchisePrice = Math.ceil(franchisePrice * 1.66)
+        franchisePrice = Math.ceil(franchisePrice * 1.15)
         setPropertyPrices()
 
         franchiseOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 6
+        CPSScore += 625
         setPerSecond()
     }
 })

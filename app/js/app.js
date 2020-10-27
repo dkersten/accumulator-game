@@ -21,8 +21,3 @@ let vendingOwned = 0,
     foodTruckOwned = 0,
     restaurantOwned = 0,
     franchiseOwned = 0
-
-// function to format numbers
-const formatNumbers = (num) => {
-    
-}
