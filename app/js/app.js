@@ -21,3 +21,5 @@ let vendingOwned = 0,
     foodTruckOwned = 0,
     restaurantOwned = 0,
     franchiseOwned = 0
+
+    // purchases owned
