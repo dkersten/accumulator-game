@@ -1,9 +1,3 @@
-// const vendingCard = document.querySelector('.vending-machine')
-// const foodCartCard = document.querySelector('.food-cart')
-// const foodTruckCard = document.querySelector('.food-truck')
-// const restaurantCard = document.querySelector('.restaurant')
-// const franchiseCard = document.querySelector('.franchise')
-
 // consts for property price DOM elements
 const vendingCostEl = document.querySelector('.vending-machine > .left .price')
 const foodCartCostEl = document.querySelector('.food-cart > .left .price')

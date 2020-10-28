@@ -22,4 +22,18 @@ let vendingOwned = 0,
     restaurantOwned = 0,
     franchiseOwned = 0
 
+    // purchases cost
+    let ingredientsPrice = 2000,
+        trainingPrice = 10000,
+        smMarketingCampaignPrice = 25000,
+        printMarketingCampaignPrice = 60000,
+        tvMarketingCampaignPrice = 100000,
+        logisticsUpgradePrice = 250000
+
     // purchases owned
+    let ingreadientsPurchased = 0,
+        trainingPurchased = 0,
+        smMarketingCampaignPurchased = 0,
+        printMarketingCampaignPurchased = 0,
+        tvMarketingCampaignPurchased = 0,
+        supplyChainLogicticsUpgraded = 0
