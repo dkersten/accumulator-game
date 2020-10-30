@@ -249,3 +249,5 @@ logisticsEfficencyCard.addEventListener('click', (e) => {
         totalUpgradesOwned += 1
     }
 })
+
+// show all properties (only after a property has been purchased)

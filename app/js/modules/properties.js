@@ -144,6 +144,7 @@ foodCartCard.addEventListener('click', (e) => {
         setPerSecond()
 
         totalPropertiesOwned += 1
+        checkForPropertyPurchase()
     }
 })
 
@@ -163,6 +164,7 @@ foodTruckCard.addEventListener('click', (e) => {
         setPerSecond()
 
         totalPropertiesOwned += 1
+        checkForPropertyPurchase()
     }
 })
 
@@ -182,6 +184,7 @@ restaurantCard.addEventListener('click', (e) => {
         setPerSecond()
 
         totalPropertiesOwned += 1
+        checkForPropertyPurchase()
     }
 })
 

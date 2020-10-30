@@ -1,4 +1,4 @@
-let CURRENTSCORE = 10000000;
+let CURRENTSCORE = 500;
 let CPSScore = 0;
 const propertiesPercentageIncrease = 1.4
 const purchasesPercentageIncrease = 1.2
@@ -45,4 +45,25 @@ let ingreadientsPurchased = 0,
     // update current score on the DOM after purchase
 const updateWealthAfterPurchase = (pricePaid) => {
     currentWealthNum.innerHTML = pricePaid.toLocaleString()
+}
+
+// trigger function to add properties to DOM (should only run on first click)
+const propertyContainerEl = document.querySelector('.properties-container')
+
+// function make sure that a property is purchased, then remove the eventhandler from the DOM
+const purchasePropertyOnceFunc = (e) => {
+    if (e.target.classList[0] === "property") {
+        if (!e.target.disabled) {
+            console.log("work fucker")
+            removeHandler()
+        }
+    }
+}
+
+// eventhandler to make sure that a property is purchased, then remove the eventhandler from the DOM
+propertyContainerEl.addEventListener('click', purchasePropertyOnceFunc)
+
+// remove eventhandler from the DOM
+const removeHandler = () => {
+    propertyContainerEl.removeEventListener('click', purchasePropertyOnceFunc)
 }
