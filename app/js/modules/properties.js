@@ -109,25 +109,22 @@ const purchasingCheck = () => {
     }
 }
 
-// update current score on the DOM after purchase
-const updateWealthAfterPurchase = (pricePaid) => {
-    currentWealthNum.innerHTML = pricePaid.toLocaleString()
-}
-
 // function call when a user purchases a vending machine
 vendingCard.addEventListener('click', (e) => {
     if (CURRENTSCORE >= vendingPrice) {
         CURRENTSCORE -= vendingPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        vendingPrice = Math.ceil(vendingPrice * 1.15)
+        vendingPrice = Math.ceil(vendingPrice * propertiesPercentageIncrease)
         setPropertyPrices()
 
         vendingOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 50
+        CPSScore += 4
         setPerSecond()
+
+        totalPropertiesOwned += 1
     }
 })
 
@@ -137,14 +134,16 @@ foodCartCard.addEventListener('click', (e) => {
         CURRENTSCORE -= foodCartPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        foodCartPrice = Math.ceil(foodCartPrice * 1.15)
+        foodCartPrice = Math.ceil(foodCartPrice * propertiesPercentageIncrease)
         setPropertyPrices()
 
         foodCartOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 125
+        CPSScore += 40
         setPerSecond()
+
+        totalPropertiesOwned += 1
     }
 })
 
@@ -154,14 +153,16 @@ foodTruckCard.addEventListener('click', (e) => {
         CURRENTSCORE -= foodTruckPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        foodTruckPrice = Math.ceil(foodTruckPrice * 1.15)
+        foodTruckPrice = Math.ceil(foodTruckPrice * propertiesPercentageIncrease)
         setPropertyPrices()
 
         foodTruckOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 300
+        CPSScore += 75
         setPerSecond()
+
+        totalPropertiesOwned += 1
     }
 })
 
@@ -171,14 +172,16 @@ restaurantCard.addEventListener('click', (e) => {
         CURRENTSCORE -= restaurantPrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        restaurantPrice = Math.ceil(restaurantPrice * 1.15)
+        restaurantPrice = Math.ceil(restaurantPrice * propertiesPercentageIncrease)
         setPropertyPrices()
 
         restaurantOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 475
+        CPSScore += 400
         setPerSecond()
+
+        totalPropertiesOwned += 1
     }
 })
 
@@ -188,13 +191,15 @@ franchiseCard.addEventListener('click', (e) => {
         CURRENTSCORE -= franchisePrice
         updateWealthAfterPurchase(CURRENTSCORE)
 
-        franchisePrice = Math.ceil(franchisePrice * 1.15)
+        franchisePrice = Math.ceil(franchisePrice * propertiesPercentageIncrease)
         setPropertyPrices()
 
         franchiseOwned += 1
         setPropertiesOwned()
 
-        CPSScore += 625
+        CPSScore += 1000
         setPerSecond()
+
+        totalPropertiesOwned += 1
     }
 })

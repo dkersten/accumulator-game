@@ -1,5 +1,9 @@
-let CURRENTSCORE = 250000;
+let CURRENTSCORE = 10000000;
 let CPSScore = 0;
+const propertiesPercentageIncrease = 1.4
+const purchasesPercentageIncrease = 1.2
+let totalPropertiesOwned = 0
+let totalUpgradesOwned = 0
 
 // get necessary DOM elements
 const vendingCard = document.querySelector('.vending-machine')
@@ -37,3 +41,8 @@ let ingreadientsPurchased = 0,
     printMarketingCampaignPurchased = 0,
     tvMarketingCampaignPurchased = 0,
     supplyChainLogicticsUpgraded = 0
+
+    // update current score on the DOM after purchase
+const updateWealthAfterPurchase = (pricePaid) => {
+    currentWealthNum.innerHTML = pricePaid.toLocaleString()
+}
