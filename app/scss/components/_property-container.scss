@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     &:hover {
       cursor: pointer;
@@ -34,6 +35,35 @@
 
       &:hover {
         cursor: not-allowed;
+      }
+    }
+
+    .bottom {
+      flex-basis: 100%;
+      margin-top: 1rem;
+      text-align: center;
+
+      button {
+        background: none;
+        color: $color-cream;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .more-info-container {
+        width: 80%;
+        margin: 1rem auto 0;
+        * {
+          color: $color-cream;
+        }
+
+        ul {
+          text-align: left;
+          list-style: disc;
+        }
       }
     }
   }
