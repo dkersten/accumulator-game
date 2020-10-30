@@ -54,7 +54,7 @@ const propertyContainerEl = document.querySelector('.properties-container')
 const purchasePropertyOnceFunc = (e) => {
     if (e.target.classList[0] === "property") {
         if (!e.target.disabled) {
-            console.log("work fucker")
+            showAllUpgrades()
             removeHandler()
         }
     }
