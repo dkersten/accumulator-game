@@ -1,4 +1,4 @@
-let CURRENTSCORE = 500;
+let CURRENTSCORE = 100000000;
 let CPSScore = 0;
 const propertiesPercentageIncrease = 1.4
 const purchasesPercentageIncrease = 1.2

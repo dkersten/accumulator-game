@@ -1,6 +1,11 @@
 // get necessary DOM elements
 const vendingCardPurchaseBtn = document.querySelector('.vending-machine button.buy')
+const foodCartCardPurchaseBtn = document.querySelector('.food-cart button.buy')
+const foodTruckCardPurchaseBtn = document.querySelector('.food-truck button.buy')
+const restaurantCardPurchaseBtn = document.querySelector('.restaurant button.buy')
+const franchiseCardPurchaseBtn = document.querySelector('.franchise button.buy')
 
+// function call when a user purchases a vending machine
 vendingCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= vendingPrice) {
         CURRENTSCORE -= vendingPrice
@@ -18,32 +23,9 @@ vendingCardPurchaseBtn.addEventListener('click', (e) => {
         totalPropertiesOwned += 1
     }
 })
-// const foodCartCard = document.querySelector('.food-cart')
-// const foodTruckCard = document.querySelector('.food-truck')
-// const restaurantCard = document.querySelector('.restaurant')
-// const franchiseCard = document.querySelector('.franchise')
-
-// function call when a user purchases a vending machine
-// vendingCard.addEventListener('click', (e) => {
-//     if (CURRENTSCORE >= vendingPrice) {
-//         CURRENTSCORE -= vendingPrice
-//         updateWealthAfterPurchase(CURRENTSCORE)
-
-//         vendingPrice = Math.ceil(vendingPrice * propertiesPercentageIncrease)
-//         setPropertyPrices()
-
-//         vendingOwned += 1
-//         setPropertiesOwned()
-
-//         CPSScore += 4
-//         setPerSecond()
-
-//         totalPropertiesOwned += 1
-//     }
-// })
 
 // function call when a user purchases a food cart
-foodCartCard.addEventListener('click', (e) => {
+foodCartCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= foodCartPrice) {
         CURRENTSCORE -= foodCartPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -63,7 +45,7 @@ foodCartCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases a food truck
-foodTruckCard.addEventListener('click', (e) => {
+foodTruckCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= foodTruckPrice) {
         CURRENTSCORE -= foodTruckPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -83,7 +65,7 @@ foodTruckCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases a restaurant
-restaurantCard.addEventListener('click', (e) => {
+restaurantCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= restaurantPrice) {
         CURRENTSCORE -= restaurantPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -103,7 +85,7 @@ restaurantCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases a franchise
-franchiseCard.addEventListener('click', (e) => {
+franchiseCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= franchisePrice) {
         CURRENTSCORE -= franchisePrice
         updateWealthAfterPurchase(CURRENTSCORE)
