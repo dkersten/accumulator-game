@@ -52,7 +52,7 @@ const propertyContainerEl = document.querySelector('.properties-container')
 
 // function make sure that a property is purchased, then remove the eventhandler from the DOM
 const purchasePropertyOnceFunc = (e) => {
-    if (e.target.classList[0] === "property") {
+    if (e.target.classList[0] === "buy") {
         if (!e.target.disabled) {
             showAllUpgrades()
             removeHandler()

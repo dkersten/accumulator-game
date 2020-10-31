@@ -1,5 +1,7 @@
-// function call when a user purchases a vending machine
-vendingCard.addEventListener('click', (e) => {
+// get necessary DOM elements
+const vendingCardPurchaseBtn = document.querySelector('.vending-machine button.buy')
+
+vendingCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= vendingPrice) {
         CURRENTSCORE -= vendingPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -16,6 +18,29 @@ vendingCard.addEventListener('click', (e) => {
         totalPropertiesOwned += 1
     }
 })
+// const foodCartCard = document.querySelector('.food-cart')
+// const foodTruckCard = document.querySelector('.food-truck')
+// const restaurantCard = document.querySelector('.restaurant')
+// const franchiseCard = document.querySelector('.franchise')
+
+// function call when a user purchases a vending machine
+// vendingCard.addEventListener('click', (e) => {
+//     if (CURRENTSCORE >= vendingPrice) {
+//         CURRENTSCORE -= vendingPrice
+//         updateWealthAfterPurchase(CURRENTSCORE)
+
+//         vendingPrice = Math.ceil(vendingPrice * propertiesPercentageIncrease)
+//         setPropertyPrices()
+
+//         vendingOwned += 1
+//         setPropertiesOwned()
+
+//         CPSScore += 4
+//         setPerSecond()
+
+//         totalPropertiesOwned += 1
+//     }
+// })
 
 // function call when a user purchases a food cart
 foodCartCard.addEventListener('click', (e) => {

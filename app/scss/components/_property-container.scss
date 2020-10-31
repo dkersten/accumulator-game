@@ -43,7 +43,13 @@
       margin-top: 1rem;
       text-align: center;
 
-      button {
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      button.more-info {
         background: none;
         color: $color-cream;
         border: none;
