@@ -12,6 +12,13 @@ const foodTruckCard = document.querySelector('.food-truck')
 const restaurantCard = document.querySelector('.restaurant')
 const franchiseCard = document.querySelector('.franchise')
 
+// get necessary DOM elements
+const vendingCardPurchaseBtn = document.querySelector('.vending-machine button.buy')
+const foodCartCardPurchaseBtn = document.querySelector('.food-cart button.buy')
+const foodTruckCardPurchaseBtn = document.querySelector('.food-truck button.buy')
+const restaurantCardPurchaseBtn = document.querySelector('.restaurant button.buy')
+const franchiseCardPurchaseBtn = document.querySelector('.franchise button.buy')
+
 // property costs
 let vendingPrice = 200,
     foodCartPrice = 50000,

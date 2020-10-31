@@ -59,6 +59,26 @@
         }
       }
 
+      button.buy {
+        color: $color-white;
+        text-shadow: 0 0 5px $color-grey-dark;
+        border: none;
+        padding: 0.35rem 0.75rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.enabled {
+          background: $color-green-bright;
+        }
+
+        &.disabled {
+          background: $color-red;
+          cursor: not-allowed;
+        }
+      }
+
       .more-info-container {
         width: 80%;
         margin: 1rem auto 0;

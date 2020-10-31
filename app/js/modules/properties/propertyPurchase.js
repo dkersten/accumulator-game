@@ -1,10 +1,3 @@
-// get necessary DOM elements
-const vendingCardPurchaseBtn = document.querySelector('.vending-machine button.buy')
-const foodCartCardPurchaseBtn = document.querySelector('.food-cart button.buy')
-const foodTruckCardPurchaseBtn = document.querySelector('.food-truck button.buy')
-const restaurantCardPurchaseBtn = document.querySelector('.restaurant button.buy')
-const franchiseCardPurchaseBtn = document.querySelector('.franchise button.buy')
-
 // function call when a user purchases a vending machine
 vendingCardPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= vendingPrice) {
