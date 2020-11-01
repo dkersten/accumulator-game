@@ -1,10 +1,10 @@
 // consts for purchase cost DOM elements
-const ingredientsCostEl = document.querySelector('.ingredients > .left .price')
-const trainingCostEl = document.querySelector('.training > .left .price')
-const smMarketingCampaignCostEl = document.querySelector('.sm-marketing > .left .price')
-const printMarketingCampaignCostEl = document.querySelector('.print-marketing > .left .price')
-const tvMarketingCampaignCostEl = document.querySelector('.tv-marketing > .left .price')
-const logisticsEfficiencyUpgradeCostEl = document.querySelector('.supply-chain-logistics > .left .price')
+const ingredientsCostEl = document.querySelector('.ingredients .left .price')
+const trainingCostEl = document.querySelector('.training .left .price')
+const smMarketingCampaignCostEl = document.querySelector('.sm-marketing .left .price')
+const printMarketingCampaignCostEl = document.querySelector('.print-marketing .left .price')
+const tvMarketingCampaignCostEl = document.querySelector('.tv-marketing .left .price')
+const logisticsEfficiencyUpgradeCostEl = document.querySelector('.supply-chain-logistics .left .price')
 
 // consts for purchase card DOM elements
 const ingredientsCard = document.querySelector('.purchase.ingredients')
@@ -15,12 +15,14 @@ const tvMarketingCard = document.querySelector('.purchase.tv-marketing')
 const logisticsEfficencyCard = document.querySelector('.purchase.supply-chain-logistics')
 
 // consts for purchase owned DOM elements
-const ingredientsOwnedEl = document.querySelector('.purchase.ingredients .quantity')
-const trainingsOwnedEl = document.querySelector('.purchase.training .quantity')
-const smMarketingCampaignOwnedEl = document.querySelector('.purchase.sm-marketing .quantity')
-const printMarketingCampaignOwnedEl = document.querySelector('.purchase.print-marketing .quantity')
-const tvMarketingCampaignOwnedEl = document.querySelector('.purchase.tv-marketing .quantity')
-const logisticsUpgradeOwnedEl = document.querySelector('.purchase.supply-chain-logistics .quantity')
+const ingredientsOwnedEl = document.querySelector('.purchase.ingredients div.top div.right span.quantity')
+const trainingsOwnedEl = document.querySelector('.purchase.training div.top div.right span.quantity')
+const smMarketingCampaignOwnedEl = document.querySelector('.purchase.sm-marketing div.top div.right span.quantity')
+const printMarketingCampaignOwnedEl = document.querySelector('.purchase.print-marketing div.top div.right span.quantity')
+const tvMarketingCampaignOwnedEl = document.querySelector('.purchase.tv-marketing div.top div.right span.quantity')
+const logisticsUpgradeOwnedEl = document.querySelector('.supply-chain-logistics div.top div.right span.quantity')
+
+console.log(ingredientsOwnedEl)
 
 // set costs of purchases
 const setPurchasePrices = () => {
