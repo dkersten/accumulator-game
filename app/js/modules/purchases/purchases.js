@@ -22,7 +22,13 @@ const printMarketingCampaignOwnedEl = document.querySelector('.purchase.print-ma
 const tvMarketingCampaignOwnedEl = document.querySelector('.purchase.tv-marketing div.top div.right span.quantity')
 const logisticsUpgradeOwnedEl = document.querySelector('.supply-chain-logistics div.top div.right span.quantity')
 
-console.log(ingredientsOwnedEl)
+// consts for purchase buttons DOM elements
+const ingredientsPurchaseBtn = document.querySelector('.purchase.ingredients button.buy')
+const trainingPurchaseBtn = document.querySelector('.purchase.training button.buy')
+const smMarketingPurchaseBtn = document.querySelector('.purchase.sm-marketing button.buy')
+const printMarketingPurchaseBtn = document.querySelector('.purchase.print-marketing button.buy')
+const tvMarketingPurchaseBtn = document.querySelector('.purchase.tv-marketing button.buy')
+const logisticsUpgradePurchaseBtn = document.querySelector('.purchase.supply-chain-logistics button.buy')
 
 // set costs of purchases
 const setPurchasePrices = () => {

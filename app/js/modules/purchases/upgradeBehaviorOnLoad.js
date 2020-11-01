@@ -20,6 +20,22 @@ printMarketingCard.classList.add('disabled')
 tvMarketingCard.classList.add('disabled')
 logisticsEfficencyCard.classList.add('disabled')
 
+// on load add 'diabled' to property buy btns
+ingredientsPurchaseBtn.disabled = true
+trainingPurchaseBtn.disabled = true
+smMarketingPurchaseBtn.disabled = true
+printMarketingPurchaseBtn.disabled = true
+tvMarketingPurchaseBtn.disabled = true
+logisticsUpgradePurchaseBtn.disabled = true
+
+// on load add 'diabled' class to property buy btns
+ingredientsPurchaseBtn.classList.add('disabled')
+trainingPurchaseBtn.classList.add('disabled')
+smMarketingPurchaseBtn.classList.add('disabled')
+printMarketingPurchaseBtn.classList.add('disabled')
+tvMarketingPurchaseBtn.classList.add('disabled')
+logisticsUpgradePurchaseBtn.classList.add('disabled')
+
 // function to continually run, calls current score check
 window.setInterval(() => {
     purchasingUpgradeCheck()
