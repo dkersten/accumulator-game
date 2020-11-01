@@ -1,9 +1,10 @@
-propertyContainerEl.addEventListener('click', (e) => {
+const purchasesContainerEl = document.querySelector('.purchases-container')
+
+purchasesContainerEl.addEventListener('click', (e) => {
+
     if (e.target.classList[0] === 'more-info') {
         const cardBottomSection = e.target.parentNode.parentNode
         const moreInfoSection = cardBottomSection.children[1]
-
-        console.log(e.target.classList[1])
 
         if (e.target.classList[1] === "hidden") {
             e.target.classList.remove("hidden")
@@ -22,6 +23,5 @@ propertyContainerEl.addEventListener('click', (e) => {
             moreInfoSection.classList.add("hide")
             moreInfoSection.classList.remove("show")
         }
-
     }
 })

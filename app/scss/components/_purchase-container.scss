@@ -95,6 +95,14 @@
       }
 
       .more-info-container {
+        &.hide {
+          display: none;
+        }
+
+        &.show {
+          display: block;
+        }
+
         width: 80%;
         margin: 1rem auto 0;
         * {

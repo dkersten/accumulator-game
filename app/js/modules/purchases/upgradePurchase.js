@@ -1,5 +1,5 @@
 // function call when a user purchases ingredients upgrade
-ingredientsCard.addEventListener('click', (e) => {
+ingredientsPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= ingredientsPrice) {
         CURRENTSCORE -= ingredientsPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -18,7 +18,7 @@ ingredientsCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases training upgrade
-trainingCard.addEventListener('click', (e) => {
+trainingPurchaseBtn.addEventListener('click', (e) => {
     console.log("training")
     if (CURRENTSCORE >= trainingPrice) {
         CURRENTSCORE -= trainingPrice
@@ -38,8 +38,7 @@ trainingCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases sm marketing campaign upgrade
-smMarketingCard.addEventListener('click', (e) => {
-    console.log("training")
+smMarketingPurchaseBtn.addEventListener('click', (e) => {
     if (CURRENTSCORE >= smMarketingCampaignPrice) {
         CURRENTSCORE -= smMarketingCampaignPrice
         updateWealthAfterPurchase(CURRENTSCORE)
@@ -58,7 +57,7 @@ smMarketingCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases print marketing campaign upgrade
-printMarketingCard.addEventListener('click', (e) => {
+printMarketingPurchaseBtn.addEventListener('click', (e) => {
     console.log("training")
     if (CURRENTSCORE >= printMarketingCampaignPrice) {
         CURRENTSCORE -= printMarketingCampaignPrice
@@ -78,7 +77,7 @@ printMarketingCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases tv marketing campaign upgrade
-tvMarketingCard.addEventListener('click', (e) => {
+tvMarketingPurchaseBtn.addEventListener('click', (e) => {
     console.log("training")
     if (CURRENTSCORE >= tvMarketingCampaignPrice) {
         CURRENTSCORE -= tvMarketingCampaignPrice
@@ -98,7 +97,7 @@ tvMarketingCard.addEventListener('click', (e) => {
 })
 
 // function call when a user purchases tv marketing campaign upgrade
-logisticsEfficencyCard.addEventListener('click', (e) => {
+logisticsUpgradePurchaseBtn.addEventListener('click', (e) => {
     console.log("training")
     if (CURRENTSCORE >= logisticsUpgradePrice) {
         CURRENTSCORE -= logisticsUpgradePrice
