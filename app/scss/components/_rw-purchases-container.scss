@@ -1,0 +1,124 @@
+.rw-purchases {
+  .rw-purchases-container {
+    margin-top: 1.5rem;
+    max-width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .rw-purchase-card {
+      padding: 1rem;
+      margin: 0 auto 1rem;
+      background: $color-green-dark;
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+          h3 {
+            color: $color-cream;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+          }
+        }
+
+        .right {
+          margin-left: 0.5rem;
+          .quantity {
+            font-weight: 700;
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.disabled {
+        background: $color-green-dark-disabled;
+
+        .price {
+          color: $color-red;
+        }
+
+        .quantity {
+          color: $color-red;
+        }
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+
+      .bottom {
+        margin-top: 1rem;
+        text-align: center;
+
+        .button-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        button.more-info {
+          background: none;
+          color: $color-cream;
+          border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        button.buy {
+          color: $color-white;
+          text-shadow: 0 0 5px $color-grey-dark;
+          border: none;
+          padding: 0.35rem 0.75rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.enabled {
+            background: $color-green-bright;
+          }
+
+          &.disabled {
+            background: $color-red;
+            cursor: not-allowed;
+          }
+        }
+
+        .more-info-container {
+          &.hide {
+            display: none;
+          }
+
+          &.show {
+            display: block;
+          }
+
+          width: 90%;
+          margin: 1rem auto 0;
+          * {
+            color: $color-cream;
+          }
+
+          ul {
+            text-align: left;
+            list-style: disc;
+
+            li:not(:last-of-type) {
+              margin-bottom: 0.35rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
