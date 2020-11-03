@@ -70,7 +70,14 @@
       span.net-worth {
         font-size: 1.25rem;
         font-weight: 700;
+      }
+
+      span.net-worth.less {
         color: $color-red;
+      }
+
+      span.net-worth.more {
+        color: $color-green-bright;
       }
     }
   }

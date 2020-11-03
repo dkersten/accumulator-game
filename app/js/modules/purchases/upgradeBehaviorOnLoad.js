@@ -39,4 +39,5 @@ logisticsUpgradePurchaseBtn.classList.add('disabled')
 // function to continually run, calls current score check
 window.setInterval(() => {
     purchasingUpgradeCheck()
+    netWorthCheck() // check to see if you haven more money than people
 }, 250)
