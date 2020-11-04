@@ -54,6 +54,18 @@
         }
       }
 
+      &.enabled {
+        background: $color-green-dark;
+
+        .price {
+          color: $color-green-bright;
+        }
+
+        .quantity {
+          color: $color-green-bright;
+        }
+      }
+
       .bottom {
         margin-top: 1rem;
         text-align: center;
