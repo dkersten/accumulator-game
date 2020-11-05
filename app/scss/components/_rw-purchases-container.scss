@@ -95,15 +95,15 @@
           &:hover {
             cursor: pointer;
           }
+        }
 
-          &.enabled {
-            background: $color-green-bright;
-          }
+        button.buy.enabled {
+          background: $color-green-bright;
+        }
 
-          &.disabled {
-            background: $color-red;
-            cursor: not-allowed;
-          }
+        button.buy.disabled {
+          background: $color-red;
+          cursor: not-allowed;
         }
 
         .more-info-container {

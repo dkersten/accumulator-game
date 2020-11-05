@@ -12,6 +12,13 @@ const costLaJollaMansionEl = document.querySelector('.rw-purchases-container .la
 const costnyNyPenthouseEl = document.querySelector('.rw-purchases-container .ny-ny-penthouse .price')
 const costBirdKeyMansionEl = document.querySelector('.rw-purchases-container .bird-key-mansion .price')
 
+// DOM elements for rw purchase buttons
+const purchaseBtnBelAirMansion = document.querySelector('.rw-purchases-container .bel-air-mansion button.buy')
+const purchaseBtnSantaMonicaBeachHouse = document.querySelector('.rw-purchases-container .santa-monica-beachouse button.buy')
+const purchaseBtnLaJollaMansion = document.querySelector('.rw-purchases-container .la-jolla-mansion button.buy')
+const purchaseBtnNyNyPenthouse = document.querySelector('.rw-purchases-container .ny-ny-penthouse button.buy')
+const purchaseBtnBirdKeyMansion = document.querySelector('.rw-purchases-container .bird-key-mansion button.buy')
+
 // consts for RW purchase prices
 const costBelAirMansion = 67500000
 const costSantaMonicaBeachHouse = 5995000
