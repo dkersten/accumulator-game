@@ -1,5 +1,4 @@
 purchaseBtnBelAirMansion.addEventListener('click', (e) => {
-    console.log("bel air buy")
     CURRENTSCORE -= costBelAirMansion
     updateWealthAfterPurchase(CURRENTSCORE)
 
