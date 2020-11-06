@@ -1,81 +1,82 @@
 // called in upgradeBehaviorOnLoad.js
 const netWorthCheck = () => {
-    if (CURRENTSCORE >= bezosNwNum) {
+    if (totalNetWorth >= bezosNwNum) {
         bezosNwEl.classList.remove("less")
         bezosNwEl.classList.add("more")
-    } else if (CURRENTSCORE < bezosNwNum) {
+    } else if (totalNetWorth < bezosNwNum) {
         bezosNwEl.classList.remove("more")
         bezosNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= arnaultNwNum) {
+    if (totalNetWorth >= arnaultNwNum) {
         arnaultNwEl.classList.remove("less")
         arnaultNwEl.classList.add("more")
-    } else if (CURRENTSCORE < arnaultNwNum) {
+    } else if (totalNetWorth < arnaultNwNum) {
         arnaultNwEl.classList.remove("more")
         arnaultNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= gatesNwNum) {
+    if (totalNetWorth >= gatesNwNum) {
         gatesNwEl.classList.remove("less")
         gatesNwEl.classList.add("more")
-    } else if (CURRENTSCORE < gatesNwNum) {
+    } else if (totalNetWorth < gatesNwNum) {
         gatesNwEl.classList.remove("more")
         gatesNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= zuckerbergNwNum) {
+    if (totalNetWorth >= zuckerbergNwNum) {
         zuckerbergNwEl.classList.remove("less")
         zuckerbergNwEl.classList.add("more")
-    } else if (CURRENTSCORE < zuckerbergNwNum) {
+    } else if (totalNetWorth < zuckerbergNwNum) {
         zuckerbergNwEl.classList.remove("more")
         zuckerbergNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= muskNwNum) {
+    if (totalNetWorth >= muskNwNum) {
         muskNwEl.classList.remove("less")
         muskNwEl.classList.add("more")
-    } else if (CURRENTSCORE < muskNwNum) {
+    } else if (totalNetWorth < muskNwNum) {
         muskNwEl.classList.remove("more")
         muskNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= ambaniNwNum) {
+    if (totalNetWorth >= ambaniNwNum) {
         ambaniNwEl.classList.remove("less")
         ambaniNwEl.classList.add("more")
-    } else if (CURRENTSCORE < ambaniNwNum) {
+    } else if (totalNetWorth < ambaniNwNum) {
         ambaniNwEl.classList.remove("more")
         ambaniNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= buffettNwNum) {
+    if (totalNetWorth >= buffettNwNum) {
         buffettNwEl.classList.remove("less")
         buffettNwEl.classList.add("more")
-    } else if (CURRENTSCORE < buffettNwNum) {
+    } else if (totalNetWorth < buffettNwNum) {
         buffettNwEl.classList.remove("more")
         buffettNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= ellisonNwNum) {
+    if (totalNetWorth >= ellisonNwNum) {
         ellisonNwEl.classList.remove("less")
         ellisonNwEl.classList.add("more")
-    } else if (CURRENTSCORE < ellisonNwNum) {
+    } else if (totalNetWorth < ellisonNwNum) {
         ellisonNwEl.classList.remove("more")
         ellisonNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= ballmerNwNum) {
+    if (totalNetWorth >= ballmerNwNum) {
         ballmerNwEl.classList.remove("less")
         ballmerNwEl.classList.add("more")
-    } else if (CURRENTSCORE < ballmerNwNum) {
+    } else if (totalNetWorth < ballmerNwNum) {
         ballmerNwEl.classList.remove("more")
         ballmerNwEl.classList.add("less")
     }
     
-    if (CURRENTSCORE >= pageNwNum) {
+    if (totalNetWorth >= pageNwNum) {
+        console.log("yes")
         pageNwEl.classList.remove("less")
         pageNwEl.classList.add("more")
-    } else if (CURRENTSCORE < pageNwNum) {
+    } else if (totalNetWorth < pageNwNum) {
         pageNwEl.classList.remove("more")
         pageNwEl.classList.add("less")
     }
