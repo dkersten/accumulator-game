@@ -21,4 +21,14 @@
     font-weight: 700;
     color: $color-green;
   }
+
+  .total-net-worth {
+    margin-top: 0.3rem;
+
+    .net-worth-num {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: $color-green;
+    }
+  }
 }

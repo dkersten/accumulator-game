@@ -6,6 +6,8 @@ purchaseBtnBelAirMansion.addEventListener('click', (e) => {
     setRwPurchasesOwned()
 
     rwPurchaseCheck()
+    
+    totalRWPurchaseWorth += costBelAirMansion
 })
 
 purchaseBtnSantaMonicaBeachHouse.addEventListener('click', (e) => {
@@ -16,6 +18,8 @@ purchaseBtnSantaMonicaBeachHouse.addEventListener('click', (e) => {
     setRwPurchasesOwned()
     
     rwPurchaseCheck()
+    
+    totalRWPurchaseWorth += costSantaMonicaBeachHouse
 })
 
 purchaseBtnLaJollaMansion.addEventListener('click', (e) => {
@@ -26,6 +30,8 @@ purchaseBtnLaJollaMansion.addEventListener('click', (e) => {
     setRwPurchasesOwned()
     
     rwPurchaseCheck()
+    
+    totalRWPurchaseWorth += costLaJollaMansion
 })
 
 purchaseBtnNyNyPenthouse.addEventListener('click', (e) => {
@@ -36,6 +42,8 @@ purchaseBtnNyNyPenthouse.addEventListener('click', (e) => {
     setRwPurchasesOwned()
     
     rwPurchaseCheck()
+    
+    totalRWPurchaseWorth += costnyNyPenthouse
 })
 
 purchaseBtnBirdKeyMansion.addEventListener('click', (e) => {
@@ -46,4 +54,6 @@ purchaseBtnBirdKeyMansion.addEventListener('click', (e) => {
     setRwPurchasesOwned()
     
     rwPurchaseCheck()
+    
+    totalRWPurchaseWorth += costBirdKeyMansion
 })

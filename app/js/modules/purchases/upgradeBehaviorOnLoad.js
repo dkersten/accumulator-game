@@ -41,4 +41,5 @@ window.setInterval(() => {
     purchasingUpgradeCheck()
     netWorthCheck() // check to see if you have more money than people
     rwPurchaseCheck() // check to see if you can buy rw purchases
+    setTotalNetWorth() // update total net worth
 }, 250)

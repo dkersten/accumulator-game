@@ -14,6 +14,9 @@ vendingCardPurchaseBtn.addEventListener('click', (e) => {
         setPerSecond()
 
         totalPropertiesOwned += 1
+        checkForPropertyPurchase()
+
+        totalPurchaseWorth += vendingPrice
     }
 })
 
@@ -34,6 +37,8 @@ foodCartCardPurchaseBtn.addEventListener('click', (e) => {
 
         totalPropertiesOwned += 1
         checkForPropertyPurchase()
+
+        totalPurchaseWorth += foodCartPrice
     }
 })
 
@@ -54,6 +59,8 @@ foodTruckCardPurchaseBtn.addEventListener('click', (e) => {
 
         totalPropertiesOwned += 1
         checkForPropertyPurchase()
+
+        totalPurchaseWorth += foodTruckPrice
     }
 })
 
@@ -74,6 +81,8 @@ restaurantCardPurchaseBtn.addEventListener('click', (e) => {
 
         totalPropertiesOwned += 1
         checkForPropertyPurchase()
+
+        totalPurchaseWorth += restaurantPrice
     }
 })
 
@@ -93,5 +102,8 @@ franchiseCardPurchaseBtn.addEventListener('click', (e) => {
         setPerSecond()
 
         totalPropertiesOwned += 1
+        checkForPropertyPurchase()
+
+        totalPurchaseWorth += franchisePrice
     }
 })

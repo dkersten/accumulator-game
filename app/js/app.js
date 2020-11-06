@@ -5,12 +5,18 @@ const purchasesPercentageIncrease = 1.2
 let totalPropertiesOwned = 0
 let totalUpgradesOwned = 0
 
+let totalNetWorth = 0
+let totalPurchaseWorth = 0
+let totalRWPurchaseWorth = 0
+
 // get necessary DOM elements
 const vendingCard = document.querySelector('.vending-machine')
 const foodCartCard = document.querySelector('.food-cart')
 const foodTruckCard = document.querySelector('.food-truck')
 const restaurantCard = document.querySelector('.restaurant')
 const franchiseCard = document.querySelector('.franchise')
+
+const netWorthEl = document.querySelector('span.net-worth-num')
 
 // get necessary DOM elements
 const vendingCardPurchaseBtn = document.querySelector('.vending-machine button.buy')
